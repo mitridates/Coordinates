@@ -1,9 +1,7 @@
 Coordinates
 ================
 
-Some libs and dql function to get results within radius for Symfony. 
-Thanks to [Hans Arnholm](https://gist.github.com/cypres) 
-for libraries mentioned in [Credits](#credits)
+Some libs and dql function to get results within radius for Symfony.
  
 ### Require
 
@@ -102,11 +100,6 @@ In Symfony Repository add query to some Entity Repository
     
     } 
 ````
-
-### Credits
--  [Hans Arnholm](https://gist.github.com/cypres) 
-    -   [gPoint](https://gist.github.com/cypres/840476#file-gpoint-php) PHP class to convert Latitude & Longitude coordinates into UTM & Lambert Conic Conformal Northing/Easting coordinates.
-    -   [GpointConverter](https://gist.github.com/cypres/840476#file-gpointconverter-class-php) PHP class to convert Latitude+Longitude coordinates into UTM and wise versa.
 
 ### License
 
