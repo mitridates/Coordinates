@@ -1,22 +1,23 @@
 Coordinates
 ================
 
-Some libs and dql function to get results within radius for Symfony.
+How to use the HAVERSINE formula in Symfony with dql.
+The query get results within radius (lat , lng, radius, unit)
  
 ### Require
 
+[Symfony](https://www.symfony.com/) This context.
 [Doctrine](https://www.doctrine-project.org/) for DQL query.
 
 ### Get git files
 
-In Symfony I use bundle namespace (App\Mybundle) 
-and store this files unther src/Coordinates
+Symfony example, used under src/Coordinates
     
      git clone git://github.com/mitridates/Coordinates.git
 
-### If used in symfony bundle
+### Add DQL function
 
-add the custom DQL function
+In a classic symfony bundle add this to  App\Mybundle\Mybundle.php
 
 ```php
         <?php
@@ -38,15 +39,13 @@ add the custom DQL function
         }
 ````    
 
-In Symfony Repository add query to some Entity Repository
+In some entity repository add query
 
 ```php
     <?php
     
     namespace App\Mybundle\Repository;
-    use App\Coordinates\lib\Boundary;
-    use App\Coordinates\lib\Geoconstants;
-    use Doctrine\ORM\EntityRepository;
+    use App\Coordinates\Boundary;use App\Coordinates\Geoconstants;use Doctrine\ORM\EntityRepository;
     
     /**
      * Class MyentitywithlatlngcoordinatesRepository
@@ -58,7 +57,7 @@ In Symfony Repository add query to some Entity Repository
          * Get results within radius.
          * @param $lat
          * @param $lng
-         * @param $radius
+         * @param $radius 
          * @param $unit
          * @return array;
          */
