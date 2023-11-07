@@ -15,7 +15,7 @@ The query get results within radius (lat , lng, radius, unit)
 
 Symfony example, used under src/Coordinates
     
-     git clone git://github.com/mitridates/Coordinates.git
+     git clone https://github.com/mitridates/Coordinates
 
 ### Add DQL function
 
