@@ -2,6 +2,7 @@ Coordinates
 ================
 
 How to use the HAVERSINE formula in Symfony with dql.
+
 The query get results within radius (lat , lng, radius, unit)
  
 ### Require
@@ -45,7 +46,8 @@ In some entity repository add query
     <?php
     
     namespace App\Mybundle\Repository;
-    use App\Coordinates\Boundary;use App\Coordinates\Geoconstants;use Doctrine\ORM\EntityRepository;
+    use App\Coordinates\Boundary;
+    use App\Coordinates\Geoconstants;use Doctrine\ORM\EntityRepository;
     
     /**
      * Class MyentitywithlatlngcoordinatesRepository
