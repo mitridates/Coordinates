@@ -47,8 +47,9 @@ In some entity repository add query
     <?php
     
     namespace App\Mybundle\Repository;
-    use App\Coordinates\Boundary;
-    use App\Coordinates\Geoconstants;use Doctrine\ORM\EntityRepository;
+    use App\Coordinates\Lib\Boundary;
+    use App\Coordinates\Geoconstants;
+    use Doctrine\ORM\EntityRepository;
     
     /**
      * Class MyentitywithlatlngcoordinatesRepository
